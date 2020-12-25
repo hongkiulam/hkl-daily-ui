@@ -2,6 +2,8 @@
 
 ---
 
+[hkl-daily-ui.netlify.app](hkl-daily-ui.netlify.app)
+
 Learning Sapper, TailwindCSS
 
 As part of my participation in the daily ui challenge, I have decide to create this site to both document my designs and recreate them using web technologies.
