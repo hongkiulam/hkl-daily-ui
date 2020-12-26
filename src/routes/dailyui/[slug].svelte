@@ -13,16 +13,17 @@
 </script>
 
 <script>
-	import { onMount } from "svelte";
 	import components from "../../components/dailyui";
 
 	export let challenge;
 	let Component;
-	onMount(async () => {
+	$: (async () => {
 		if (components[challenge.slug]) {
 			Component = (await components[challenge.slug]()).default;
+		} else {
+			Component = undefined;
 		}
-	});
+	})();
 
 	$: paddedNum = challenge.slug.padStart(3, "0");
 </script>
@@ -34,20 +35,32 @@
 	<title>{challenge.title}</title>
 </svelte:head>
 
-<div class="max-w-5xl w-full m-auto poppins text-center">
-	<h1 class="text-lg ">{paddedNum} - {challenge.title}</h1>
-	<h1 class="text-md mt-5">UI Design (Figma)</h1>
+<div class="max-w-5xl w-full m-auto poppins">
+	<h1 class="text-xl mt-5">{paddedNum} - {challenge.title}</h1>
+	<div class="mt-5">
+		<a
+			class="button"
+			href="/dailyui/{Number(challenge.slug) - 1}"
+			style={challenge.slug === '1' ? 'pointer-events:none;opacity:0.5' : ''}>back</a>
+		<a
+			class="button"
+			href="/dailyui/{Number(challenge.slug) + 1}"
+			style={challenge.slug === '100' ? 'pointer-events:none;opacity:0.5' : ''}>next</a>
+	</div>
+	<h1 class="text-lg mt-5">UI Design (Figma)</h1>
 	<img src={challenge.behance} alt="ui" />
-	<h1 class="text-md mt-5">HTML, CSS</h1>
+	<h1 class="text-lg mt-5">HTML, CSS</h1>
 
 	{#if Component}
 		<svelte:component this={Component} />
 	{:else}TODO{/if}
-	<div>
+	<div class="py-5">
 		<a
+			class="button"
 			href="/dailyui/{Number(challenge.slug) - 1}"
 			style={challenge.slug === '1' ? 'pointer-events:none;opacity:0.5' : ''}>back</a>
 		<a
+			class="button"
 			href="/dailyui/{Number(challenge.slug) + 1}"
 			style={challenge.slug === '100' ? 'pointer-events:none;opacity:0.5' : ''}>next</a>
 	</div>

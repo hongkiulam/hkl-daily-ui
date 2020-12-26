@@ -19,8 +19,5 @@
 		improving my ui skills. Along the way I decided it would be a good idea to
 		recreate those designs using web technologies.
 	</details>
-	<a
-		class="mt-5 bg-green-200 py-2 px-3 rounded-full"
-		href="/dailyui"
-		rel="prefetch">Show me!</a>
+	<a class="mt-5 button" href="/dailyui" rel="prefetch">Show me!</a>
 </section>

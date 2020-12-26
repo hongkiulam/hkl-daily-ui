@@ -4,5 +4,10 @@
 .poppins {
   font-family: "Poppins", sans-serif;
 }
+@layer components {
+  .button {
+    @apply bg-green-200 py-1 px-3 rounded-full;
+  }
+}
 
 @tailwind utilities;

@@ -36,9 +36,9 @@
 
 <p>{error.message}</p>
 
-<a href="/dailyui">Back to challenges</a>
-<br />
-<a href="/">Back home</a>
+<a href="/dailyui" class="button">Back to challenges</a>
+
+<a href="/" class="button">Back home</a>
 
 {#if dev && error.stack}
 	<pre>{error.stack}</pre>
