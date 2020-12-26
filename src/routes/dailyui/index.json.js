@@ -4,7 +4,7 @@ const contents = JSON.stringify(
   challenges.map((challenge) => {
     return {
       title: challenge.title,
-      slug: challenge.slug,
+      day: challenge.day,
     };
   })
 );

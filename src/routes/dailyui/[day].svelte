@@ -1,8 +1,6 @@
 <script context="module">
 	export async function preload({ params, query }) {
-		// the `slug` parameter is available because
-		// this file is called [slug].svelte
-		const res = await this.fetch(`dailyui/${params.slug}.json`);
+		const res = await this.fetch(`dailyui/${params.day}.json`);
 		const data = await res.json();
 		if (res.status === 200) {
 			return { challenge: data };
@@ -18,14 +16,14 @@
 	export let challenge;
 	let Component;
 	$: (async () => {
-		if (components[challenge.slug]) {
-			Component = (await components[challenge.slug]()).default;
+		if (components[challenge.day]) {
+			Component = (await components[challenge.day]()).default;
 		} else {
 			Component = undefined;
 		}
 	})();
 
-	$: paddedNum = challenge.slug.padStart(3, "0");
+	$: paddedNum = challenge.day.padStart(3, "0");
 </script>
 
 <style>
@@ -40,12 +38,12 @@
 	<div class="mt-5">
 		<a
 			class="button"
-			href="/dailyui/{Number(challenge.slug) - 1}"
-			style={challenge.slug === '1' ? 'pointer-events:none;opacity:0.5' : ''}>back</a>
+			href="/dailyui/{Number(challenge.day) - 1}"
+			style={challenge.day === '1' ? 'pointer-events:none;opacity:0.5' : ''}>back</a>
 		<a
 			class="button"
-			href="/dailyui/{Number(challenge.slug) + 1}"
-			style={challenge.slug === '100' ? 'pointer-events:none;opacity:0.5' : ''}>next</a>
+			href="/dailyui/{Number(challenge.day) + 1}"
+			style={challenge.day === '100' ? 'pointer-events:none;opacity:0.5' : ''}>next</a>
 	</div>
 	<h1 class="text-lg mt-5">UI Design (Figma)</h1>
 	<img src={challenge.behance} alt="ui" />
@@ -57,11 +55,11 @@
 	<div class="py-5">
 		<a
 			class="button"
-			href="/dailyui/{Number(challenge.slug) - 1}"
-			style={challenge.slug === '1' ? 'pointer-events:none;opacity:0.5' : ''}>back</a>
+			href="/dailyui/{Number(challenge.day) - 1}"
+			style={challenge.day === '1' ? 'pointer-events:none;opacity:0.5' : ''}>back</a>
 		<a
 			class="button"
 			href="/dailyui/{Number(challenge.slug) + 1}"
-			style={challenge.slug === '100' ? 'pointer-events:none;opacity:0.5' : ''}>next</a>
+			style={challenge.day === '100' ? 'pointer-events:none;opacity:0.5' : ''}>next</a>
 	</div>
 </div>
