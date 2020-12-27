@@ -45,7 +45,7 @@
 			href="/dailyui/{Number(challenge.day) + 1}"
 			style={challenge.day === '100' ? 'pointer-events:none;opacity:0.5' : ''}>next</a>
 	</div>
-	<h1 class="text-lg mt-5">UI Design (Figma)</h1>
+	<h1 class="text-lg mt-5">UI Design (Figma, Inkscape)</h1>
 	<img src={challenge.behance} alt="ui" />
 	<h1 class="text-lg mt-5">HTML, CSS</h1>
 
@@ -59,7 +59,7 @@
 			style={challenge.day === '1' ? 'pointer-events:none;opacity:0.5' : ''}>back</a>
 		<a
 			class="button"
-			href="/dailyui/{Number(challenge.slug) + 1}"
+			href="/dailyui/{Number(challenge.day) + 1}"
 			style={challenge.day === '100' ? 'pointer-events:none;opacity:0.5' : ''}>next</a>
 	</div>
 </div>
