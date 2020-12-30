@@ -34,7 +34,6 @@
 </svelte:head>
 
 <div class="max-w-5xl w-full m-auto poppins">
-	<h1 class="text-xl mt-5">{paddedNum} - {challenge.title}</h1>
 	<div class="mt-5">
 		<a
 			class="button"
@@ -45,6 +44,8 @@
 			href="/dailyui/{Number(challenge.day) + 1}"
 			style={challenge.day === '100' ? 'pointer-events:none;opacity:0.5' : ''}>next</a>
 	</div>
+	<h1 class="text-xl mt-5">{paddedNum} - {challenge.title}</h1>
+	<p class="mt-5 text-gray-700">{challenge.desc || ''}</p>
 	<h1 class="text-lg mt-5">UI Design (Figma, Inkscape)</h1>
 	<img src={challenge.behance} alt="ui" />
 	<h1 class="text-lg mt-5">HTML, CSS</h1>
