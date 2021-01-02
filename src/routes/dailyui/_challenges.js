@@ -40,7 +40,7 @@ const challenges = [
     title: "Logo",
     day: "5",
     behance:
-      "https://mir-s3-cdn-cf.behance.net/project_modules/1400_opt_1/242e3e110027981.5fe75383729da.png",
+      "https://mir-s3-cdn-cf.behance.net/project_modules/1400_opt_1/62e378110027981.5ff0a8a8a31b4.png",
     desc: `Logo design is definitely not as familiar to me as UI and web design.
       This was an attempt to create a logo for one of my side projects - a expense tracker app.
       The logo is based on a pando tree, as well as an arrow.`,
@@ -49,7 +49,7 @@ const challenges = [
     title: "User Profile",
     day: "6",
     behance:
-      "https://mir-s3-cdn-cf.behance.net/project_modules/1400_opt_1/fa2bb8110027981.5fecbe5a89027.png",
+      "https://mir-s3-cdn-cf.behance.net/project_modules/1400_opt_1/b86ec3110027981.5ff0a8a8a3d7f.png",
     desc: `I decided to recreate the Github user profile page, with a focus on
       improving the layout rather than recreating the core UI elements. My changes
       were ultimately geared towards creating a more organised profile page where each section
@@ -59,10 +59,40 @@ const challenges = [
     title: "Settings",
     day: "7",
     behance:
-      "https://mir-s3-cdn-cf.behance.net/project_modules/1400_opt_1/94c870110027981.5fecbe5a89745.png",
+      "https://mir-s3-cdn-cf.behance.net/project_modules/1400_opt_1/ef3d7e110027981.5ff0a8a8a4308.png",
     desc: `It took some time before I decided which kind of settings I wanted to design, there was simply
     too much to choose from! I ended up going for a background/ wallpaper customiser that my phone's home launcher uses.
     I quite like how it turned out - inspired by a minimal, sleek aesthetic.`,
+  },
+  {
+    title: "404 Page",
+    day: "8",
+    behance:
+      "https://mir-s3-cdn-cf.behance.net/project_modules/1400_opt_1/f8d31a110027981.5ff0a8a8a49dd.png",
+    desc: `I recently created a 404 page at work but unfortunately could not
+    include any illustrations because it did not fit my companies brand style.
+    Hence this was a great chance for me to try and use illustrations as part of
+    my design.`,
+  },
+  {
+    title: "Music Player",
+    day: "9",
+    behance:
+      "https://mir-s3-cdn-cf.behance.net/project_modules/1400_opt_1/457e1e110027981.5ff0a8a8a3702.png",
+    desc: `I had an urge to play around with some 2.5d buttons, achieved by adding a small chin/ thickness to each button,.
+    I think it does a good job at creating a feeling of depth without overdoing it with complicated shadows.
+    The design should lean towards a retro vibe, portraying the clicky push buttons of previous decades. `,
+  },
+  {
+    title: "Social Share",
+    day: "10",
+    behance:
+      "https://mir-s3-cdn-cf.behance.net/project_modules/1400_opt_1/36e0d1110027981.5ff0a8a8a4ebe.png",
+    desc: `A simple and straightforward approach to the social share button.
+    Ideally the tooltips would be used on a larger, desktop based device 
+    while the popup would be used on a smaller, mobile device.
+    While designing the tooltips, I found a useful way of creating the tip by rotating 
+    a square and hiding protruding corners using border radius.`,
   },
 ];
 
