@@ -4,6 +4,12 @@
 .poppins {
   font-family: "Poppins", sans-serif;
 }
+.owl-1 > * + * {
+  margin-top: 1rem;
+}
+.owl-2 > * + * {
+  margin-top: 1.5rem;
+}
 @layer components {
   .button {
     @apply bg-green-200 py-1 px-3 rounded-full;

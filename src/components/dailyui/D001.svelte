@@ -16,9 +16,7 @@
   .quicksand {
     font-family: Quicksand;
   }
-  .owl > :global(* + *) {
-    margin-top: 1.5rem;
-  }
+
   .gradient-background {
     background: linear-gradient(-70deg, #9ad7cf, #d1ede9);
   }
@@ -36,10 +34,10 @@
     href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap"
     rel="stylesheet" />
 </svelte:head>
-<div
+<section
   class="gradient-background p-10 flex justify-center items-center quicksand">
   <div
-    class="owl max-w-xl w-full bg-gray-50 rounded-xl shadow-lg p-5 flex flex-col items-center">
+    class="owl-2 max-w-xl w-full bg-gray-50 rounded-xl shadow-lg p-5 flex flex-col items-center">
     <h1 class="text-lg sm:text-3xl">Ready to join {'{'}company name{'}'}?</h1>
     {@html input({ label: 'Name', value: 'Fred Bloggs' })}
     {@html input({
@@ -76,4 +74,4 @@
       </div>
     </div>
   </div>
-</div>
+</section>
