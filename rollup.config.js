@@ -61,6 +61,7 @@ export default {
                 useESModules: true,
               },
             ],
+            "@babel/plugin-syntax-import-meta",
           ],
         }),
 
