@@ -3,6 +3,9 @@
 		const res = await this.fetch(`dailyui/${params.day}.json`);
 		const data = await res.json();
 		if (res.status === 200) {
+			if (data.message === "Not found") {
+				this.error(404, "This challenge has not been done yet");
+			}
 			return { challenge: data };
 		} else {
 			this.error(res.status, "This challenge has not been done yet");

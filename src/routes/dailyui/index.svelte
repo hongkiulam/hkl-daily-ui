@@ -21,7 +21,9 @@
 
 <section class="w-full max-w-5xl m-auto px-5">
 	<h1 class="my-5">Day:</h1>
-	<div class="grid grid-flow-col gap-3 justify-start ">
+	<div
+		class="grid gap-3 justify-start"
+		style="grid-template-columns:repeat(auto-fit, minmax(2.5rem, 1fr))">
 		{#each challenges as challenge}
 			<div>
 				<a
