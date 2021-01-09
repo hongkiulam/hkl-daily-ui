@@ -79,7 +79,7 @@ const challenges = [
     day: "9",
     behance:
       "https://mir-s3-cdn-cf.behance.net/project_modules/1400_opt_1/457e1e110027981.5ff0a8a8a3702.png",
-    desc: `I had an urge to play around with some 2.5d buttons, achieved by adding a small chin/ thickness to each button,.
+    desc: `I had an urge to play around with some 2.5d buttons, achieved by adding a small chin/ thickness to each button.
     I think it does a good job at creating a feeling of depth without overdoing it with complicated shadows.
     The design should lean towards a retro vibe, portraying the clicky push buttons of previous decades. `,
   },
@@ -93,6 +93,54 @@ const challenges = [
     while the popup would be used on a smaller, mobile device.
     While designing the tooltips, I found a useful way of creating the tip by rotating 
     a square and hiding protruding corners using border radius.`,
+  },
+  {
+    title: "Flash Message",
+    day: "11",
+    behance:
+      "https://mir-s3-cdn-cf.behance.net/project_modules/1400_opt_1/87232c110027981.5ff3820cb3193.png",
+    desc: `A lighthearted design based on the popular lazy egg character - Gudetama!
+    Inspired by other people's approaches to this challenge online, whom had also
+    based their designs on animals/ characters.`,
+  },
+  {
+    title: "E-Commerce Product Page",
+    day: "12",
+    behance:
+      "https://mir-s3-cdn-cf.behance.net/project_modules/1400_opt_1/c145b5110027981.5ff98fcba78d3.png",
+    desc: `As I’m back to full working days my available time for this challenge going forward will be limited.
+    I wanted to go for a classic and familiar design, that draws more focus towards the product information, since
+    this is what I feel more people are concerned about as opposed to the product images.`,
+  },
+  {
+    title: "Direct Message App",
+    day: "13",
+    behance:
+      "https://mir-s3-cdn-cf.behance.net/project_modules/1400_opt_1/9749de110027981.5ff98fcba673d.png",
+    desc: `A lot of the time while I think of the design/ layout, I will search for inspiration online almost instinctively. This has lead to me feeling as though I lack the creativity for creating layouts individually so for this challenge I wanted to come up with a layout by myself.
+    A result of that may be that it is less daring and unique, but I think I did a pretty good job.`,
+  },
+  {
+    title: "Countdown Timer",
+    day: "14",
+    behance:
+      "https://mir-s3-cdn-cf.behance.net/project_modules/1400_opt_1/461b8e110027981.5ff98fcba73da.png",
+    desc: `I had the random idea during the day to do a Blackpink inpsired programming project some time in the future,
+    but I feel this brief lent itself quite nicely to that idea, so two birds one stone I guess!
+    A highlight of this design is that I got to play around with extrapolating the gradient background of the original image,
+    to fill the desired frame. I did this through a combination of flipping the original image, masks, and applying a overlaying gradient.   `,
+  },
+  {
+    title: "On Off Switch",
+    day: "15",
+    behance:
+      "https://mir-s3-cdn-cf.behance.net/project_modules/1400_opt_1/a1d23f110027981.5ff98fcba6cd5.png",
+    desc: `I was very happy to finally get a relatively simple brief because I meant I could realistically get something decent
+    done in the hour or two that I have after work.
+    I considered doing a basic toggle switch, focussing on proportions, shadows and the more minute details of the design,
+    however it wasn’t too much more effort to add some flair to the design by giving it some context.
+    The context chosen is something we are forced to be familiar with nowadays, which is volume toggles
+     - for both muting yourself and others in the video conferences!`,
   },
 ];
 
