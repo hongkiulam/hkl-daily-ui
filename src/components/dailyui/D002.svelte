@@ -46,9 +46,9 @@
 <section class="mulish bg-gray-700 p-10 flex justify-center items-center">
   <div class="grid w-10/12 grid-flow-row md:grid-cols-2">
     <!-- LEFT -->
-    <div class="bg-gray-100 w-full h-full flex flex-col p-5 owl-1">
+    <div class="bg-gray-100 w-full h-full flex flex-col p-5 owly-1">
       <h1 class="text-2xl">Payment Details</h1>
-      <form class="owl-1" on:submit|preventDefault>
+      <form class="owly-1" on:submit|preventDefault>
         <h3>Payment Method</h3>
         <div class="grid gap-6 grid-flow-col grid-cols-3">
           {#each paymentMethods as pM}

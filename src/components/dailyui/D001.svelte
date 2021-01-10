@@ -37,7 +37,7 @@
 <section
   class="gradient-background p-10 flex justify-center items-center quicksand">
   <div
-    class="owl-2 max-w-xl w-full bg-gray-50 rounded-xl shadow-lg p-5 flex flex-col items-center">
+    class="owly-2 max-w-xl w-full bg-gray-50 rounded-xl shadow-lg p-5 flex flex-col items-center">
     <h1 class="text-lg sm:text-3xl">Ready to join {'{'}company name{'}'}?</h1>
     {@html input({ label: 'Name', value: 'Fred Bloggs' })}
     {@html input({

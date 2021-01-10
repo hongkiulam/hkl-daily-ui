@@ -4,11 +4,17 @@
 .poppins {
   font-family: "Poppins", sans-serif;
 }
-.owl-1 > * + * {
+.owly-1 > * + * {
   margin-top: 1rem;
 }
-.owl-2 > * + * {
+.owly-2 > * + * {
   margin-top: 1.5rem;
+}
+.owlx-1 > * + * {
+  margin-left: 1rem;
+}
+.owlx-2 > * + * {
+  margin-left: 1.5rem;
 }
 @layer components {
   .button {
