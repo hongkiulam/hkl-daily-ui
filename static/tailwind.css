@@ -18,7 +18,7 @@
 }
 @layer components {
   .button {
-    @apply bg-green-200 py-1 px-3 rounded-full;
+    @apply bg-green-200 py-1 px-3 rounded-full text-gray-700;
   }
 }
 

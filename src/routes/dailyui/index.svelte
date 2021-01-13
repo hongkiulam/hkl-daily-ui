@@ -27,7 +27,7 @@
 		{#each challenges as challenge}
 			<div>
 				<a
-					class="bg-green-200 rounded-md w-10 h-10 flex justify-center items-center"
+					class="bg-green-200 text-gray-700 rounded-md w-10 h-10 flex justify-center items-center"
 					rel="prefetch"
 					href="dailyui/{challenge.day}">{challenge.day}</a>
 			</div>

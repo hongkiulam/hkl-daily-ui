@@ -10,7 +10,7 @@
 </svelte:head>
 
 <section
-	class="max-w-xs h-full w-full flex flex-col justify-center items-center m-auto p-10">
+	class="max-w-xs h-screen w-full flex flex-col justify-center items-center m-auto p-10">
 	<h1 class="poppins text-2xl">Daily UI Challenge</h1>
 	<p class="poppins text-sm">by Haydon Lam</p>
 	<details class="w-full transition-all duration-300 mt-5">
