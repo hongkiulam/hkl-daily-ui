@@ -55,10 +55,14 @@
 </script>
 
 <style>
+  #container {
+    font-family: "Nunito", sans-serif;
+    font-weight: 300;
+  }
   .phone-screen {
     max-width: 320px;
     width: 100%;
-    height: 568px;
+    height: 650px;
   }
   .bg-dark {
     background-color: #2d2e3c;
@@ -71,11 +75,17 @@
   }
 </style>
 
+<svelte:head>
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap"
+    rel="stylesheet" />
+</svelte:head>
 <div id="container" class="bg-indigo-200 p-5">
   <div
     id="calculator"
     class="flex flex-col justify-between phone-screen
-    m-auto p-5 rounded-3xl shadow-2xl transition-all
+    m-auto p-5 rounded-3xl shadow-2xl transition-all text-lg
     {isDarkMode ? 'bg-dark text-gray-200' : 'bg-gray-100 text-gray-900'}">
     <div id="topbar" class="flex justify-between">
       <button
@@ -92,7 +102,7 @@
     </div>
     <div
       id="display"
-      class="{isDarkMode ? 'bg-display-dark' : 'bg-display-light'} rounded-xl p-5">
+      class="{isDarkMode ? 'bg-display-dark' : 'bg-display-light'} rounded-xl p-5  text-2xl">
       <p id="display__formula" class="text-left">124 + 38 * 2</p>
       <p id="display__solution" class="text-right">200</p>
     </div>
