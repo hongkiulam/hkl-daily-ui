@@ -88,7 +88,7 @@
             width="158"
             height="37"
             viewBox={checked ? "0 0 158 37" : "0 0 158 1"}
-            class="wave"
+            class="wave w-full h-full"
             fill="none"
             xmlns="http://www.w3.org/2000/svg">
             {#if checked}
