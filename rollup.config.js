@@ -62,6 +62,7 @@ export default {
               },
             ],
             "@babel/plugin-syntax-import-meta",
+            "@babel/plugin-proposal-optional-chaining",
           ],
         }),
 
